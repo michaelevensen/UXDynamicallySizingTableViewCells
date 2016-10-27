@@ -36,8 +36,17 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-
+        
+        // Set content
         cell.contentLabel.text = self.data[indexPath.row]
+        
+        if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CellCollectionView") as! TableViewCollectionCell
+            
+            cell.contentLabel.text = self.data[indexPath.row]
+            
+            return cell
+        }
         
         return cell
     }

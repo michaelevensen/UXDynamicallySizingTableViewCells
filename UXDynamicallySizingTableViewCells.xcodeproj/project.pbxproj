@@ -13,8 +13,9 @@
 		9E93A8EF1DC22C1200E876B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E93A8ED1DC22C1200E876B3 /* LaunchScreen.storyboard */; };
 		9E93A8FA1DC22C1200E876B3 /* UXDynamicallySizingTableViewCellsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93A8F91DC22C1200E876B3 /* UXDynamicallySizingTableViewCellsTests.swift */; };
 		9E93A9051DC22C1200E876B3 /* UXDynamicallySizingTableViewCellsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93A9041DC22C1200E876B3 /* UXDynamicallySizingTableViewCellsUITests.swift */; };
-		9E93A9131DC22C3C00E876B3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93A9121DC22C3C00E876B3 /* TableViewCell.swift */; };
+		9E93A9131DC22C3C00E876B3 /* TableViewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93A9121DC22C3C00E876B3 /* TableViewCollectionCell.swift */; };
 		9E93A9151DC22C5B00E876B3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93A9141DC22C5B00E876B3 /* TableViewController.swift */; };
+		9E93A9171DC2359D00E876B3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E93A9161DC2359D00E876B3 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +48,9 @@
 		9E93A9001DC22C1200E876B3 /* UXDynamicallySizingTableViewCellsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UXDynamicallySizingTableViewCellsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E93A9041DC22C1200E876B3 /* UXDynamicallySizingTableViewCellsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UXDynamicallySizingTableViewCellsUITests.swift; sourceTree = "<group>"; };
 		9E93A9061DC22C1200E876B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E93A9121DC22C3C00E876B3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9E93A9121DC22C3C00E876B3 /* TableViewCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCollectionCell.swift; sourceTree = "<group>"; };
 		9E93A9141DC22C5B00E876B3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9E93A9161DC2359D00E876B3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,8 @@
 				9E93A8EB1DC22C1200E876B3 /* Assets.xcassets */,
 				9E93A8ED1DC22C1200E876B3 /* LaunchScreen.storyboard */,
 				9E93A8F01DC22C1200E876B3 /* Info.plist */,
-				9E93A9121DC22C3C00E876B3 /* TableViewCell.swift */,
+				9E93A9161DC2359D00E876B3 /* TableViewCell.swift */,
+				9E93A9121DC22C3C00E876B3 /* TableViewCollectionCell.swift */,
 				9E93A9141DC22C5B00E876B3 /* TableViewController.swift */,
 			);
 			path = UXDynamicallySizingTableViewCells;
@@ -265,7 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E93A9131DC22C3C00E876B3 /* TableViewCell.swift in Sources */,
+				9E93A9131DC22C3C00E876B3 /* TableViewCollectionCell.swift in Sources */,
+				9E93A9171DC2359D00E876B3 /* TableViewCell.swift in Sources */,
 				9E93A9151DC22C5B00E876B3 /* TableViewController.swift in Sources */,
 				9E93A8E51DC22C1200E876B3 /* AppDelegate.swift in Sources */,
 			);
@@ -518,6 +522,7 @@
 				9E93A90B1DC22C1200E876B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E93A90C1DC22C1200E876B3 /* Build configuration list for PBXNativeTarget "UXDynamicallySizingTableViewCellsTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				9E93A90E1DC22C1200E876B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E93A90F1DC22C1200E876B3 /* Build configuration list for PBXNativeTarget "UXDynamicallySizingTableViewCellsUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +540,7 @@
 				9E93A9111DC22C1200E876B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

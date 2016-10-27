@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell, UICollectionViewDataSource {
+class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var contentLabel: UILabel!
     
@@ -22,18 +22,5 @@ class TableViewCell: UITableViewCell, UICollectionViewDataSource {
 
         // Configure the view for the selected state
     }
-    
-    
-    // CollectionView DataSource
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath)
-        
-        return cell
-    }
-}
 
+}
